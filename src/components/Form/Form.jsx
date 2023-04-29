@@ -4,7 +4,7 @@ function Form() {
   return (
     <div className={style.container}>
         <div className={style["left-col"]}>
-            <img src="/images/paw.png" alt="" className={style.logo}/>
+            <img src="/images/paw2.png" alt="" className={style.logo}/>
         </div>
         <div className={style["right-col"]}>
             <div className={style.info}>

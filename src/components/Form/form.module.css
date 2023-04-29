@@ -9,7 +9,7 @@
     background-image: url("/images/azil.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 50%;
     display: none;
 }
 
@@ -20,6 +20,7 @@
     padding: 80px 40px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .info{
@@ -30,7 +31,7 @@
     letter-spacing: 3px;
     color: var(--clr-accent-500);
     margin-bottom: 5px;
-    font-size: ;
+    font-weight: 300;
 }
 
 .info > p{
@@ -50,6 +51,7 @@ button{
     margin-top: 15px;
     padding: 10px 0px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 input{
@@ -69,4 +71,23 @@ textarea{
     padding: 10px;
     border: none;
     outline: none;
+    resize: none;
+}
+
+.logo{
+    padding: 25px;
+    width: 150px;
+    color: var(--clr-accent-500);
+}
+
+@media(min-width: 768px){
+    .left-col{
+        display: block;
+    }
+    .info > h1{
+        font-size: var(--fs-700);
+    }
+    .right-col{
+        width: 50%;
+    }
 }
