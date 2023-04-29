@@ -16,7 +16,7 @@ function Carousel() {
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
-            spaceBetween={50}
+            spaceBetween={0}
             slidesPerView={1}
             speed={800}
             loop

@@ -21,6 +21,7 @@ font-family: 'Varela Round', sans-serif;
   --clr-grey-100: rgb(235, 237, 243);
   --clr-grey-400: rgb(189, 189, 189);
   --clr-grey-800: #2f3034;
+  --clr-grey-850: #2b2b2e;
   --clr-grey-900: #1d1d1f;
 
   --clr-accent-500: #FC5F2A;
@@ -149,6 +150,7 @@ body{
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   background-color: var(--clr-grey-800);
+  color: var(--clr-neutral-100);
 }
 
 .container{
