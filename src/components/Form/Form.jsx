@@ -14,18 +14,18 @@ function Form() {
                     Ako želite prijaviti napuštenu životinju? Obratite nam se!
                 </p>
             </div>
-            <form>
-                <label htmlFor="">IME I PREZIME</label>
-                <input type="text" placeholder='Unesite vaše ime i prezime'/>
+            <form className={style.contactform}>
+                <label htmlFor="" className={style.label}>IME I PREZIME</label>
+                <input type="text" placeholder='Unesite vaše ime i prezime' className={style.input}/>
                 
-                <label htmlFor="">EMAIL</label>
-                <input type="email" placeholder='Vaša email adresa'/>
+                <label htmlFor="" className={style.label}>EMAIL</label>
+                <input type="email" placeholder='Vaša email adresa' className={style.input}/>
 
-                <label htmlFor="">MESSAGE</label>
-                <textarea name="" id="" cols="30" rows="6" placeholder='Unesite vašu poruku'>
+                <label htmlFor="" className={style.label}>MESSAGE</label>
+                <textarea name="" id="" cols="30" rows="6" placeholder='Unesite vašu poruku' className={style.textarea}>
                 </textarea>
 
-                <button>POŠALJI</button>
+                <button className={style.button}>POŠALJI</button>
             </form>
         </div>
     </div>

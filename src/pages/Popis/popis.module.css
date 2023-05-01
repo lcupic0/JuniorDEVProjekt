@@ -1,0 +1,123 @@
+.popis{
+    background-color: #252528;
+}
+
+.wrapper{
+    min-height: calc(100vh - 224px - 80px);
+    padding: 70px;
+    display: flex;
+}
+
+.leftcol{
+    width: 20vw;
+}
+
+.rightcol{
+    width: 80vw;
+}
+
+.odabir:first-child{
+    margin-bottom: 60px;
+}
+
+.odabir > p{
+    margin-bottom: 5px;
+    font-size: var(--fs-450);
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input{
+    margin-right: 5px;
+}
+
+.label{
+    cursor: pointer;
+}
+
+/* Desna strana */
+.rightcol{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.card{
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("images/pas1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    transition: .3s ease-in-out;
+    outline: 2px solid rgb(4, 114, 20);
+}
+
+.card:hover{
+    outline: 2px solid rgb(189, 189, 189);
+}
+
+@media(max-width: 1100px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .leftcol{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .rightcol{
+        width: 100%;
+    }
+    .forma{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .card{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media(max-width: 768px){
+    
+    .wrapper{
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    .rightcol{
+        width: 100%;
+    }
+    .leftcol{
+        justify-content: center;
+        gap: 100px;
+    }
+    .forma{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .card{
+        width: 100%;
+        height: 150px;
+    }
+    .rightcol{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .label{
+        padding: 10px;
+        background-color: var(--clr-grey-900);
+        border-radius: 10px;
+        
+    }
+}

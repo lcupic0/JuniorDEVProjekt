@@ -38,13 +38,13 @@
     text-align: justify;
 }
 
-form{
+.contactform{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-button{
+.button{
     font-family: 'Jost', sans-serif;
     letter-spacing: 2px;
     border: none;
@@ -54,7 +54,7 @@ button{
     cursor: pointer;
 }
 
-input{
+.input{
     font-family: 'Jost', sans-serif;
     letter-spacing: 1px;
     padding: 10px;
@@ -63,11 +63,11 @@ input{
     outline: none;
 }
 
-label{
+.label{
     margin-bottom: 5px;
 }
 
-textarea{
+.textarea{
     padding: 10px;
     border: none;
     outline: none;

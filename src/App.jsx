@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import Pocetna from './pages/Pocetna'
+import Pocetna from './pages/Pocetna/Pocetna'
 import Navigation from './components/Navigation/Navigation'
-import Map from './components/Map/Map'
-import Form from './components/Form/Form'
+import Footer from './components/Footer/Footer'
+import Popis from './pages/Popis/Popis'
+
 /*
 $ npm install swiper
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
       <Navigation />
-      <Pocetna />
+      <Popis />
+      <Footer/>
     </>
   )
 }
