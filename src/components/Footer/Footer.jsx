@@ -14,7 +14,7 @@ function Footer() {
         </div>
         <hr />
         <div className={style.potpis}>
-            <span>EDIT JuniorDev &copy;2023</span>
+            <span>EDIT JuniorDev &copy;2023 | <a href="https://digitalnadalmacija.hr/" target='_blank'>Digitalna Dalmacija</a></span>
             <span>Rad by: <a href="https://github.com/lcupic0" target='_blank'>Luka Čupić</a></span>
         </div>
     </div>

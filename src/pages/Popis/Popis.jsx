@@ -1,3 +1,4 @@
+import Modal from '../../components/Modal/Modal'
 import style from './popis.module.css'
 
 function Popis() {
@@ -43,6 +44,8 @@ function Popis() {
 
             <div className={style.rightcol}>
                 <div className={style.card}>Medo</div>
+                <Modal />
+
                 <div className={style.card}>Medo</div>
                 <div className={style.card}>Medo</div>
                 <div className={style.card}>Medo</div>
