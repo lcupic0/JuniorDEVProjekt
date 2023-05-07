@@ -1,0 +1,44 @@
+/* OBAVIJEST - Jedna obavijest, a ne cijeli paket */
+
+
+.obavijest{
+    margin-bottom: 100px;
+}
+
+.obavijest p{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.naslovobavijesti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #535353;;
+    margin-bottom: 10px;
+}
+
+.naslovobavijesti > h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: var(--fs-450);
+    color: var(--clr-accent-500);
+}
+
+.naslovobavijesti > span{
+    color: var(--clr-accent-500);
+    font-weight: 300;
+}
+
+.upozorenje{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.ikona{
+    font-size: 20px;
+    color: rgb(187, 4, 4);
+}

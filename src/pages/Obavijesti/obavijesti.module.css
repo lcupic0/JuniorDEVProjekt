@@ -1,0 +1,81 @@
+.obavijesti{
+    min-height: 100vh;
+    --max-width: 1300px;
+    --padding: 1rem;
+    margin-inline: auto; /* da postavi left and right -> Logical Property */
+    width: min(var(--max-width), 100% - (2*var(--padding)));
+    
+}
+
+.button{
+    font-family: var(--ff-body);
+    letter-spacing: 2px;
+    border: none;
+    margin: 50px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #727272;
+    color: white;
+}
+
+.obavijesti > h1{
+    font-family: var(--ff-body);
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: var(--fs-600);
+    text-decoration: underline;
+}
+
+/* OBAVIJEST - Jedna obavijest, a ne cijeli paket */
+
+
+.obavijest{
+    margin-bottom: 100px;
+}
+
+.obavijest p{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.naslovobavijesti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #535353;;
+    margin-bottom: 10px;
+}
+
+.naslovobavijesti > h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: var(--fs-450);
+    color: var(--clr-accent-500);
+}
+
+.naslovobavijesti > span{
+    color: var(--clr-accent-500);
+    font-weight: 300;
+}
+
+.upozorenje{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.ikona{
+    font-size: 20px;
+    color: rgb(187, 4, 4);
+}
+
+@media(max-width: 768px){
+    .obavijesti > h1{
+        font-size: var(--fs-500);
+    }
+}

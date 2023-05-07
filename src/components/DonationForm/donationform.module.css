@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    min-height: 50vh;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.left-col{
+    background-image: url("/images/azil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: none;
+}
+
+.right-col{
+    background: var(--clr-grey-850);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.info{
+    margin-bottom: 50px;
+}
+
+.info > h1{
+    letter-spacing: 3px;
+    color: var(--clr-accent-500);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.info > p{
+    text-align: justify;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.button{
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input{
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+}
+
+.label{
+    margin-bottom: 5px;
+}
+
+.textarea{
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.logo{
+    padding: 25px;
+    width: 150px;
+    color: var(--clr-accent-500);
+}
+
+@media(min-width: 768px){
+    .left-col{
+        display: block;
+    }
+    .info > h1{
+        font-size: var(--fs-700);
+    }
+    .right-col{
+        width: 50%;
+    }
+}

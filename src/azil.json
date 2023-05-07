@@ -1,0 +1,54 @@
+ {
+    "zivotinje": [
+        {
+            "id": 1,
+            "ime": "Medo",
+            "vrsta": "pas",
+            "cip": false,
+            "godine": 44,
+            "opis": "saffsasaf fsff sf saf fas",
+            "pregled": "2022-09-23",
+            "udomljen": true
+        },
+        {
+            "id": 2,
+            "ime": "Snoopy",
+            "vrsta": "pas",
+            "cip": true,
+            "godine": 50,
+            "opis": "Više od običnog psa",
+            "pregled": "2000-02-13",
+            "udomljen": false
+        },
+        {
+            "id": 3,
+            "ime": "Miljenko",
+            "vrsta": "mačka",
+            "cip": false,
+            "godine": 21,
+            "opis": "Više od obične mačke",
+            "pregled": "2010-05-11",
+            "udomljen": false
+        },
+        {
+            "id": 4,
+            "ime": "Snoopy",
+            "vrsta": "pas",
+            "cip": true,
+            "godine": 50,
+            "opis": "Više od običnog psa",
+            "pregled": "2000-02-13",
+            "udomljen": false
+        },
+        {
+            "id": 5,
+            "ime": "Snoopy",
+            "vrsta": "pas",
+            "cip": true,
+            "godine": 50,
+            "opis": "Više od običnog psa",
+            "pregled": "2000-02-13",
+            "udomljen": false
+        }
+    ]
+ }
