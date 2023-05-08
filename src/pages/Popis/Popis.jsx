@@ -1,7 +1,23 @@
+import { useEffect, useState } from 'react'
 import Modal from '../../components/Modal/Modal'
 import style from './popis.module.css'
+import axios from 'axios'
 
 function Popis() {
+
+    const [zivotinje, postaviZivotinje] = useState([]);
+    const [selectedAnimal, setSelectedAnimal] = useState()
+
+    useEffect(() => {
+        axios
+            .get("http://localhost:3001/zivotinje")
+            .then(res => postaviZivotinje(res.data));
+    }, []);
+
+    const handleClick = (zivotinja) => {
+        setSelectedAnimal(zivotinja);
+    }
+
   return (
     <div className={style.popis}>
         <div className={style.wrapper}>
@@ -43,14 +59,17 @@ function Popis() {
             </div>
 
             <div className={style.rightcol}>
-                <div className={style.card}>Medo</div>
-                <Modal />
-
-                <div className={style.card}>Medo</div>
-                <div className={style.card}>Medo</div>
-                <div className={style.card}>Medo</div>
-                <div className={style.card}>Medo</div>
-                <div className={style.card}>Medo</div>
+                {zivotinje.map(z => (
+                    <>
+                        <div className={style.card} key={z.id} 
+                            style={{backgroundImage: `url("images/${z.image}")`, outline: z.udomljen ? "2px solid rgb(4, 114, 20)" : "2px solid rgb(195, 20, 20)"}}
+                            onClick={() => handleClick(z)}
+                        >
+                            {z.ime}
+                        </div>
+                    </>
+                ))}
+                {selectedAnimal && <Modal selectedAnimal={selectedAnimal} setSelectedAnimal={setSelectedAnimal}/>}
             </div>
         </div>
     </div>

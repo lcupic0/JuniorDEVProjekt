@@ -59,6 +59,7 @@
 
     transition: .3s ease-in-out;
     outline: 2px solid rgb(4, 114, 20);
+
 }
 
 .card:hover{

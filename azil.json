@@ -8,7 +8,8 @@
             "godine": 44,
             "opis": "saffsasaf fsff sf saf fas",
             "pregled": "2022-09-23",
-            "udomljen": true
+            "udomljen": true,
+            "image": "pas1.jpg"
         },
         {
             "id": 2,
@@ -18,7 +19,8 @@
             "godine": 50,
             "opis": "Više od običnog psa",
             "pregled": "2000-02-13",
-            "udomljen": false
+            "udomljen": false,
+            "image": "pas2.jpg"
         },
         {
             "id": 3,
@@ -28,7 +30,8 @@
             "godine": 21,
             "opis": "Više od obične mačke",
             "pregled": "2010-05-11",
-            "udomljen": false
+            "udomljen": false,
+            "image": "pas3.jpg"
         },
         {
             "id": 4,
@@ -38,7 +41,8 @@
             "godine": 50,
             "opis": "Više od običnog psa",
             "pregled": "2000-02-13",
-            "udomljen": false
+            "udomljen": true,
+            "image": "pas1.jpg"
         },
         {
             "id": 5,
@@ -48,7 +52,8 @@
             "godine": 50,
             "opis": "Više od običnog psa",
             "pregled": "2000-02-13",
-            "udomljen": false
+            "udomljen": false,
+            "image": "pas3.jpg"
         }
     ]
  }
