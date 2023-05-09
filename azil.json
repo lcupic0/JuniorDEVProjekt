@@ -76,6 +76,17 @@
       "pregled": "2023-02-01",
       "udomljen": "",
       "image": "macka2.jpg"
+    },
+    {
+      "id": 8,
+      "ime": "Ante",
+      "vrsta": "mačka",
+      "cip": true,
+      "godine": "2",
+      "opis": "",
+      "pregled": "2023-05-31",
+      "udomljen": "",
+      "image": "pas1.jpg"
     }
   ]
 }

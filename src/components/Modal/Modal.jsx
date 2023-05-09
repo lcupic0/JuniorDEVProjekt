@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import style from './modal.module.css'
 
 function Modal({selectedAnimal, setSelectedAnimal}) {
+
+    const [updateMode, setUpdateMode] = useState(false);
 
     const handleClose = () => {
         setSelectedAnimal();

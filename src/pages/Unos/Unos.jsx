@@ -54,15 +54,15 @@ function Unos() {
 
             <form className={style.contactform} onSubmit={handleSubmit}>
                 <label htmlFor="ime" className={style.label}>IME</label>
-                <input type="text" id="ime" name="ime" placeholder='Unesite ime životinje' onChange={inputChange} className={style.input}/>
+                <input type="text" id="ime" name="ime" placeholder='Unesite ime životinje' onChange={inputChange} className={style.input} required/>
 
                 <label htmlFor="slika" className={style.label}>SLIKA</label>
-                <input type="text" id="slika" name="image" placeholder='Unesite naziv slike (slika1.jpg)' onChange={inputChange} className={style.input}/>
+                <input type="text" id="slika" name="image" placeholder='Unesite naziv slike (slika1.jpg)' onChange={inputChange} className={style.input} required/>
                 
                 <span className={style.label}>VRSTA ŽIVOTINJE</span>
                 <div className={style.radioforma}>
                     <div>
-                        <input type="radio" id="pas" name="vrsta" value="pas" onChange={inputChange} className={style.tockica}/>
+                        <input type="radio" id="pas" name="vrsta" value="pas" onChange={inputChange} className={style.tockica} required/>
                         <label htmlFor="pas">Pas</label>
                     </div>
                     <div>
@@ -76,20 +76,20 @@ function Unos() {
                 </div>
 
                 <label htmlFor="godine" className={style.label}>GODINE</label>
-                <input type="number" id="godine" name="godine" value={input.godine} onChange={inputChange} placeholder='Unesite dob životinje' className={style.input}/>
+                <input type="number" id="godine" name="godine" value={input.godine} onChange={inputChange} placeholder='Unesite dob životinje' className={style.input} required/>
 
                 <label htmlFor="" className={style.label}>OPIS</label>
                 <textarea name="opis" id="opis" cols="30" rows="6" value={input.opis} onChange={inputChange} placeholder='Kratki opis životinje i njenog stanja' className={style.textarea}>
                 </textarea>
 
                 <div className={style.check}>
-                    <input type="checkbox" className={style.tockica} id="cipiran" name="cip" value={input.cip} onChange={inputChange}/>
+                    <input type="checkbox" className={style.tockica} id="cipiran" name="cip" value={input.cip} onChange={inputChange} required/>
                     <label htmlFor="cipiran" className={style.label}>Čipiran</label>
                 </div>
 
                 <div className={style.datum}>
                     <label htmlFor="date">Pregled:</label>
-                    <input type="date" className={style.dateinput} id="date" name="pregled" onChange={inputChange}/>
+                    <input type="date" className={style.dateinput} id="date" name="pregled" onChange={inputChange} required/>
                 </div>
 
                 <button className={style.button}>POŠALJI DONACIJU</button>
