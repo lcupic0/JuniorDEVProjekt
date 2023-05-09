@@ -2,24 +2,24 @@
   "zivotinje": [
     {
       "id": 1,
-      "ime": "Medo udomljen",
+      "ime": "Medo ver123",
       "vrsta": "pas",
-      "cip": false,
-      "godine": 44,
-      "opis": "saffsasaf fsff sf saf fas",
-      "pregled": "2022-09-23",
+      "cip": "false",
+      "godine": "23",
+      "opis": "testna verzija 2",
+      "pregled": "2021-10-02",
       "udomljen": "true",
       "image": "pas1.jpg"
     },
     {
       "id": 2,
-      "ime": "Snoopy udomljen",
-      "vrsta": "pas",
-      "cip": true,
-      "godine": 50,
-      "opis": "Više od običnog psa",
-      "pregled": "2000-02-13",
-      "udomljen": "true",
+      "ime": "Snoopy 2",
+      "vrsta": "mačka",
+      "cip": "false",
+      "godine": "21",
+      "opis": "Više od običnog psas",
+      "pregled": "2000-02-01",
+      "udomljen": "false",
       "image": "pas2.jpg"
     },
     {

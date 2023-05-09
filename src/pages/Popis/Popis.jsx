@@ -18,7 +18,7 @@ function Popis() {
             .then(res => postaviZivotinje(res.data));
     }, []);
 
-
+    
     const handleFilterChange = (event) =>{
         const {name,value} = event.target;
         setFilters(prevFilters => ({...prevFilters, [name]: value}));
@@ -90,7 +90,7 @@ function Popis() {
                         </div>
                     </>
                 ))}
-                {selectedAnimal && <Modal selectedAnimal={selectedAnimal} setSelectedAnimal={setSelectedAnimal}/>}
+                {selectedAnimal && <Modal selectedAnimal={selectedAnimal} setSelectedAnimal={setSelectedAnimal} zivotinje={zivotinje} postaviZivotinje={postaviZivotinje}/>}
             </div>
         </div>
     </div>
