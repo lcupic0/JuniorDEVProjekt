@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import style from './modal.module.css'
 
 function Modal({selectedAnimal, setSelectedAnimal}) {
@@ -5,6 +6,14 @@ function Modal({selectedAnimal, setSelectedAnimal}) {
     const handleClose = () => {
         setSelectedAnimal();
     }
+
+    
+    const handleKeyDown = (event) => {
+        if(event.keyCode === 27){
+            setSelectedAnimal();
+        }
+    }
+    document.addEventListener('keydown', handleKeyDown);
 
   return (
     <div className={style.modal}>
@@ -16,7 +25,10 @@ function Modal({selectedAnimal, setSelectedAnimal}) {
                     <div>
                         <p><span style={{fontWeight: 'bold'}}>Ime:</span> {selectedAnimal.ime}</p>
                         <p><span style={{fontWeight: 'bold'}}>Vrsta:</span> {selectedAnimal.vrsta}</p>
-                        <p><span style={{fontWeight: 'bold'}}>Status:</span> {selectedAnimal.udomljen ? "Udomljen" : "Nije udomljen"}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Status:</span> {selectedAnimal.udomljen ==="true" ? "Udomljen" : "Nije udomljen"}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Čipiran:</span> {selectedAnimal.cip ? "Da" : "Ne"}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Pregled:</span> {selectedAnimal.pregled}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Godine:</span> {selectedAnimal.godine}</p>
                     </div>
                 </div>
                 <p><span style={{fontWeight: 'bold'}}>Opis:</span></p>

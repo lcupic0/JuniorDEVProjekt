@@ -59,11 +59,10 @@
 
     transition: .3s ease-in-out;
     outline: 2px solid rgb(4, 114, 20);
-
 }
 
 .card:hover{
-    outline: 2px solid rgb(189, 189, 189);
+    outline: 2px solid rgb(189, 189, 189)!important;
 }
 
 @media(max-width: 1100px){

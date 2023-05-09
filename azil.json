@@ -1,59 +1,81 @@
- {
-    "zivotinje": [
-        {
-            "id": 1,
-            "ime": "Medo",
-            "vrsta": "pas",
-            "cip": false,
-            "godine": 44,
-            "opis": "saffsasaf fsff sf saf fas",
-            "pregled": "2022-09-23",
-            "udomljen": true,
-            "image": "pas1.jpg"
-        },
-        {
-            "id": 2,
-            "ime": "Snoopy",
-            "vrsta": "pas",
-            "cip": true,
-            "godine": 50,
-            "opis": "Više od običnog psa",
-            "pregled": "2000-02-13",
-            "udomljen": false,
-            "image": "pas2.jpg"
-        },
-        {
-            "id": 3,
-            "ime": "Miljenko",
-            "vrsta": "mačka",
-            "cip": false,
-            "godine": 21,
-            "opis": "Više od obične mačke",
-            "pregled": "2010-05-11",
-            "udomljen": false,
-            "image": "pas3.jpg"
-        },
-        {
-            "id": 4,
-            "ime": "Snoopy",
-            "vrsta": "pas",
-            "cip": true,
-            "godine": 50,
-            "opis": "Više od običnog psa",
-            "pregled": "2000-02-13",
-            "udomljen": true,
-            "image": "pas1.jpg"
-        },
-        {
-            "id": 5,
-            "ime": "Snoopy",
-            "vrsta": "pas",
-            "cip": true,
-            "godine": 50,
-            "opis": "Više od običnog psa",
-            "pregled": "2000-02-13",
-            "udomljen": false,
-            "image": "pas3.jpg"
-        }
-    ]
- }
+{
+  "zivotinje": [
+    {
+      "id": 1,
+      "ime": "Medo udomljen",
+      "vrsta": "pas",
+      "cip": false,
+      "godine": 44,
+      "opis": "saffsasaf fsff sf saf fas",
+      "pregled": "2022-09-23",
+      "udomljen": "true",
+      "image": "pas1.jpg"
+    },
+    {
+      "id": 2,
+      "ime": "Snoopy udomljen",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 50,
+      "opis": "Više od običnog psa",
+      "pregled": "2000-02-13",
+      "udomljen": "true",
+      "image": "pas2.jpg"
+    },
+    {
+      "id": 3,
+      "ime": "Miljenko",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": 21,
+      "opis": "Više od obične mačke",
+      "pregled": "2010-05-11",
+      "udomljen": "false",
+      "image": "macka2.jpg"
+    },
+    {
+      "id": 4,
+      "ime": "Velja",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 50,
+      "opis": "Više od običnog psa",
+      "pregled": "2000-02-13",
+      "udomljen": "false",
+      "image": "pas1.jpg"
+    },
+    {
+      "id": 5,
+      "ime": "Mile",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": 50,
+      "opis": "Više od običnog psa",
+      "pregled": "2000-02-13",
+      "udomljen": "false",
+      "image": "pas3.jpg"
+    },
+    {
+      "id": 6,
+      "ime": "Ante",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": "21",
+      "opis": "Mudonja",
+      "pregled": "2023-05-11",
+      "udomljen": "",
+      "image": "pas1.jpg"
+    },
+    {
+      "id": 7,
+      "ime": "Mirko",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": "1",
+      "opis": "Kratkodlaka macka",
+      "pregled": "2023-02-01",
+      "udomljen": "",
+      "image": "macka2.jpg"
+    }
+  ]
+}
