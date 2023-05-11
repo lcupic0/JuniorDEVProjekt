@@ -1,9 +1,5 @@
 # JuniorDEVProjekt
-Završni projekt za EDIT JuniorDev 
-
-$ npm install swiper
-$ npm install react-router-dom@latest       -> Ovo je v6 verzija programa
-$ npm install -g json-server
+<b>Test</b>
 
 
  TODO LIST
