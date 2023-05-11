@@ -2,24 +2,24 @@
   "zivotinje": [
     {
       "id": 1,
-      "ime": "Medo ver123",
+      "ime": "Medo ver123df",
       "vrsta": "pas",
       "cip": "false",
       "godine": "23",
-      "opis": "testna verzija 2",
+      "opis": "testna verzija 2s",
       "pregled": "2021-10-02",
       "udomljen": "true",
       "image": "pas1.jpg"
     },
     {
       "id": 2,
-      "ime": "Snoopy 2",
+      "ime": "Snoopy 212",
       "vrsta": "mačka",
       "cip": "false",
       "godine": "21",
       "opis": "Više od običnog psas",
       "pregled": "2000-02-01",
-      "udomljen": "false",
+      "udomljen": "true",
       "image": "pas2.jpg"
     },
     {
@@ -30,7 +30,7 @@
       "godine": 21,
       "opis": "Više od obične mačke",
       "pregled": "2010-05-11",
-      "udomljen": "false",
+      "udomljen": "true",
       "image": "macka2.jpg"
     },
     {
@@ -41,7 +41,7 @@
       "godine": 50,
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
-      "udomljen": "false",
+      "udomljen": "true",
       "image": "pas1.jpg"
     },
     {
@@ -52,7 +52,7 @@
       "godine": 50,
       "opis": "Više od običnog psa",
       "pregled": "2000-02-13",
-      "udomljen": "false",
+      "udomljen": "true",
       "image": "pas3.jpg"
     },
     {
@@ -63,7 +63,7 @@
       "godine": "21",
       "opis": "Mudonja",
       "pregled": "2023-05-11",
-      "udomljen": "",
+      "udomljen": "true",
       "image": "pas1.jpg"
     },
     {
@@ -74,7 +74,7 @@
       "godine": "1",
       "opis": "Kratkodlaka macka",
       "pregled": "2023-02-01",
-      "udomljen": "",
+      "udomljen": "true",
       "image": "macka2.jpg"
     },
     {
@@ -85,8 +85,100 @@
       "godine": "2",
       "opis": "",
       "pregled": "2023-05-31",
-      "udomljen": "",
+      "udomljen": "true",
       "image": "pas1.jpg"
+    },
+    {
+      "id": 9,
+      "ime": "Karako",
+      "vrsta": "mačka",
+      "cip": true,
+      "godine": "21",
+      "opis": "ghgffvvg",
+      "pregled": "2023-05-24",
+      "udomljen": "true",
+      "image": "macka2.jpg"
+    }
+  ],
+  "donacije": [
+    {
+      "id": 3,
+      "kategorija": "donirano",
+      "tip": "Novac",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 4,
+      "kategorija": "donirano",
+      "tip": "Ostalo",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 5,
+      "kategorija": "donirano",
+      "tip": "Hrana",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 6,
+      "kategorija": "donirano",
+      "tip": "Ostalo",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 8,
+      "kategorija": "donirano",
+      "tip": "Novac",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 9,
+      "kategorija": "donirano",
+      "tip": "Hrana",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 10,
+      "kategorija": "trazi",
+      "tip": "Ostalo",
+      "vrijednost": 15,
+      "opis": "Hrana za ptice"
+    },
+    {
+      "id": 11,
+      "kategorija": "",
+      "tip": "Igračke",
+      "vrijednost": "255",
+      "opis": "TESTNA HRANA"
+    },
+    {
+      "id": 12,
+      "kategorija": "nudi",
+      "tip": "Novac",
+      "vrijednost": "11",
+      "opis": "TESTESTESTTESTESTESTTESTESTESTTESTESTEST"
+    }
+  ],
+  "obavijesti": [
+    {
+      "id": 6,
+      "naslov": "fsfafsfassdf",
+      "datum": "11.5.2023",
+      "tekst": "sdffsdsdf",
+      "vazno": true
+    },
+    {
+      "id": 7,
+      "naslov": "sdf",
+      "datum": "11.5.2023",
+      "tekst": "sfd",
+      "vazno": false
     }
   ]
 }

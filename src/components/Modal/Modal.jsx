@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import style from './modal.module.css'
 import axios from "axios"
+import { useContext } from 'react';
+import AdminContext from '../../context/Context';
 
 function Modal({selectedAnimal, setSelectedAnimal, zivotinje, postaviZivotinje}) {
 
-    const [updateMode, setUpdateMode] = useState(false);
+    const {admin, setAdmin} = useContext(AdminContext);
+
     const listaVrsta = ["pas","mačka"];
+
+    const [updateMode, setUpdateMode] = useState(false);
     const [input, setInput] = useState({
         id: selectedAnimal.id,
         ime: selectedAnimal.ime,
@@ -16,7 +21,7 @@ function Modal({selectedAnimal, setSelectedAnimal, zivotinje, postaviZivotinje})
         pregled: selectedAnimal.pregled,
         udomljen: selectedAnimal.udomljen,
         image: selectedAnimal.image,
-    })
+    });
 
     const handleClose = () => {
         setSelectedAnimal();
@@ -27,13 +32,13 @@ function Modal({selectedAnimal, setSelectedAnimal, zivotinje, postaviZivotinje})
         setInput({...input, [name]: value});
     }
 
-    const handleUpdate = (event) => {
-        axios.put(`http://localhost:3001/zivotinje/${selectedAnimal.id}`, input)
+    const handleUpdate = async () => {
+        await axios.put(`http://localhost:3001/zivotinje/${selectedAnimal.id}`, input)
         .then(res => {
             setSelectedAnimal(res.data);
             return res.data;
         })
-        .then(editedAnimal => {
+        .then(editedAnimal => { // Moglo se i umjesto ovoga pisati const result = await axios.get("http://localhost:3001/animals"); pa postaviZivotinje(result.data);
             const updatedAnimals = zivotinje.map(z => {
                 if(z.id === editedAnimal.id){
                     return editedAnimal; // Zamijeni originalnu s updateanom zivotinjom
@@ -47,6 +52,14 @@ function Modal({selectedAnimal, setSelectedAnimal, zivotinje, postaviZivotinje})
         .catch(err => {
             console.log(err);
         });
+    }
+
+    const handleUdomi = async () => {
+        const promjena = selectedAnimal;
+        promjena.udomljen = "true";
+        await axios.put(`http://localhost:3001/zivotinje/${selectedAnimal.id}`, promjena);
+        const noviRezultati = await axios.get("http://localhost:3001/zivotinje")
+        .then(res => postaviZivotinje(res.data));
     }
 
   return (
@@ -121,8 +134,8 @@ function Modal({selectedAnimal, setSelectedAnimal, zivotinje, postaviZivotinje})
                     <p><span style={{fontWeight: 'bold'}}>Opis:</span></p>
                     <p>{selectedAnimal.opis}</p>
                     <div className={style.botuni}>
-                        <button style={{backgroundColor: 'var(--clr-accent-500)'}}>Udomi</button>
-                        <button style={{backgroundColor: '#0f914e'}} onClick={() => setUpdateMode(true)}>Uredi</button>
+                        {selectedAnimal.udomljen === "false" ? (<button style={{backgroundColor: 'var(--clr-accent-500)'}} onClick={handleUdomi}>Udomi</button>) : ("")}
+                        {admin && <button style={{backgroundColor: '#0f914e'}} onClick={() => setUpdateMode(true)}>Uredi</button>}
                     </div>
                 </div>
             </div>

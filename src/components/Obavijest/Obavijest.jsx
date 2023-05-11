@@ -1,21 +1,36 @@
 import style from './obavijest.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCan, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
+import axios from "axios";
 
-function Obavijest() {
+function Obavijest({obavijest, setObavijesti, admin}) {
+
+  const handleDelete = async () => {
+    await axios.delete(`http://localhost:3001/obavijesti/${obavijest.id}`)
+    const refreshObavijesti = await axios.get("http://localhost:3001/obavijesti");
+    setObavijesti(refreshObavijesti.data);
+  }
+  
   return (
     <div className={style.obavijest}>
-        <div className={style.naslovobavijesti}>
-            <h2>Pronađen Pas</h2>
-            <span>15.04.2023</span>
-        </div>
+      <div className={style.naslovobavijesti}>
+          <h2>{obavijest.naslov}</h2>
+          <span>{obavijest.datum}</span>
+      </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quis eos cum, repellendus corrupti inventore quasi laudantium sequi minus nesciunt est, accusamus rerum beatae soluta quam assumenda, facere nostrum saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia laudantium minima recusandae quos qui neque deleniti! Ab quia obcaecati culpa praesentium consequuntur ullam beatae pariatur illo, atque voluptatum ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur deserunt quod veniam impedit, ducimus, fuga commodi debitis modi vel repellendus perferendis amet, excepturi obcaecati iste saepe explicabo voluptatum atque nam.</p>
+      <p>{obavijest.tekst}</p>
 
+      
         <div className={style.upozorenje}>
+          {admin && (<FontAwesomeIcon icon={faTrashCan} className={style.obrisi} onClick={handleDelete}/>)}
+          {obavijest.vazno && 
+          (<div>
             <FontAwesomeIcon icon={faTriangleExclamation} className={style.ikona}/>
             <span>VAŽNO!</span>
+          </div>
+          )}
         </div>
+    
     </div>
   )
 }

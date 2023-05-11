@@ -76,6 +76,11 @@ nav > div > ul li:hover:after{
     display: none;
 }
 
+.adminon{
+    color: red;
+    text-decoration: wavy;
+}
+
 @media(max-width: 980px){
     nav{
         padding: 0px 30px;
