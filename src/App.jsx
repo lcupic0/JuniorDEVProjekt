@@ -11,6 +11,8 @@ import AdminContext from './context/Context'
 
 function App() {
 
+  // Za korištenje ADMIN privilegija - pritisnite dugme "AdminLogin" u NAVBAR-u.
+
   // U localStorage upisemo vrijednost admina.
   // Tako da budemo uvijek ulogirani u slucaju refresha stranice ili daljnjeg koristenja.
 
