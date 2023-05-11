@@ -25,14 +25,15 @@ function Donacije() {
         {formExpand && (<DonationForm donacije={donacije} setDonacije={setDonacije} admin={admin} toggleFormExpand={toggleFormExpand}/>)}
 
         <h1>Donirano:</h1>
-        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="donirano")} setDonacije={setDonacije} admin={admin}/>
+        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="donirano")} setDonacije={setDonacije} admin={admin} className={style.donacijaa}/>
 
         <h1>Traži se:</h1>
-        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="trazi")} setDonacije={setDonacije} admin={admin}/>
+        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="trazi")} setDonacije={setDonacije} admin={admin} className={style.donacijaa}/>
 
         <h1>Nudi se:</h1>
-        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="nudi")} setDonacije={setDonacije} admin={admin}/>
+        <Donacija donacije={donacije.filter((donacija) => donacija.kategorija==="nudi")} setDonacije={setDonacije} admin={admin} className={style.donacijaa}/>
     </div>
+    
   )
 }
 

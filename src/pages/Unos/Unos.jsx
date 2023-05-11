@@ -12,7 +12,7 @@ function Unos() {
         godine: "",
         opis: "",
         pregled: "",
-        udomljen: "",
+        udomljen: "false",
         image: "",
     })
 
@@ -83,7 +83,7 @@ function Unos() {
                 </textarea>
 
                 <div className={style.check}>
-                    <input type="checkbox" className={style.tockica} id="cipiran" name="cip" value={input.cip} onChange={inputChange} required/>
+                    <input type="checkbox" className={style.tockica} id="cipiran" name="cip" value={input.cip} onChange={inputChange} />
                     <label htmlFor="cipiran" className={style.label}>Čipiran</label>
                 </div>
 
@@ -92,7 +92,7 @@ function Unos() {
                     <input type="date" className={style.dateinput} id="date" name="pregled" onChange={inputChange} required/>
                 </div>
 
-                <button className={style.button}>POŠALJI DONACIJU</button>
+                <button className={style.button}>UNESI ŽIVOTINJU</button>
             </form>
         </div>
     </div>

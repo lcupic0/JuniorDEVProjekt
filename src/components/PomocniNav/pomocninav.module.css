@@ -1,6 +1,6 @@
 .wrapper{
     background-color: var(--clr-grey-900);
-    height: 400px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
@@ -23,24 +23,31 @@
 
 .title{
     font-weight: var(--fw-bold);
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     letter-spacing: 1px;
-    margin-bottom: 12px;
-    
+    margin-bottom: 8px;
 }
 
 .opis{
-    font-size: var(--fs-300);
+    font-size: var(--fs-100);
 }
 
 @media(min-width: 768px){
     .wrapper{
-        height: 200px;
+        height: 250px;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 1fr;
         align-content: center;
     }
+
+    .opis{
+        font-size: var(--fs-300);
+    }
     
+    .title{
+        font-size: var(--fs-400);
+        margin-bottom: 12px;
+    }
 }

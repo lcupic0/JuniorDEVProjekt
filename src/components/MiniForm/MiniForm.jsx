@@ -42,15 +42,15 @@ function MiniForm({ setObavijesti, toggleFormExpand, admin}) {
     <div>
       <form className={style.contactform} onSubmit={handleSubmit}>
         <label htmlFor="naslov" className={style.label}>NASLOV</label>
-        <input type="text" id="naslov" name="naslov" placeholder='Unesite naslov' className={style.input} onChange={handleChange}/>
+        <input type="text" id="naslov" name="naslov" placeholder='Unesite naslov' className={style.input} onChange={handleChange} maxLength={20}/>
 
         <label htmlFor="tekst" className={style.label}>TEKST</label>
-        <textarea name="tekst" id="tekst" cols="30" rows="6" placeholder='Unesite vaš tekst...' className={style.textarea} onChange={handleChange}>
+        <textarea name="tekst" id="tekst" cols="30" rows="6" placeholder='Unesite vaš tekst...' className={style.textarea} onChange={handleChange} minLength={10} maxLength={200}>
         </textarea>
 
         {admin && (
           <div className={style.check}>
-            <input type="checkbox" value={input.vazno} name="vazno" id="vazno" className={style.tockica} onChange={handleChange} />
+            <input type="checkbox" value={input.vazno} name="vazno" id="vazno" className={style.tockica} onChange={handleChange}/>
             <label htmlFor="vazno" className={style.label}>VAŽNO</label>
           </div>
         )}

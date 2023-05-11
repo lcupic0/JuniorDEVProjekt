@@ -42,6 +42,7 @@ $ npm install swiper
 $ npm install react-router-dom@latest       -> Ovo je v6 verzija programa
 $ npm install -g json-server                
 $ npm install dayjs                        -> za datume
+$ npm install --save @react-google-maps/api
 */
 
 /*

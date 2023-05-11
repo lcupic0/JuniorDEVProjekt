@@ -1,0 +1,20 @@
+.maps{
+    width: 100vw;
+    height: 100vh;
+    --max-width: 1300px;
+    --padding: 1rem;
+    margin-inline: auto; /* da postavi left and right -> Logical Property */
+    width: min(var(--max-width), 100% - (2*var(--padding)));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maps > h1{
+    text-align: center;
+    margin: 50px 0px;
+    color: var(--clr-accent-500);
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+

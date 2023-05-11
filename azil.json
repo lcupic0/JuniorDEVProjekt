@@ -2,102 +2,91 @@
   "zivotinje": [
     {
       "id": 1,
-      "ime": "Medo ver123df",
+      "ime": "Medo",
       "vrsta": "pas",
-      "cip": "false",
+      "cip": "true",
       "godine": "23",
-      "opis": "testna verzija 2s",
+      "opis": "Medo je kralj!",
       "pregled": "2021-10-02",
-      "udomljen": "true",
+      "udomljen": "false",
       "image": "pas1.jpg"
     },
     {
       "id": 2,
-      "ime": "Snoopy 212",
-      "vrsta": "mačka",
-      "cip": "false",
-      "godine": "21",
-      "opis": "Više od običnog psas",
-      "pregled": "2000-02-01",
+      "ime": "Mirko",
+      "vrsta": "pas",
+      "cip": true,
+      "godine": "3",
+      "opis": "Mops je mali psić velikog šarma i odličnog smisla za humor. Njegovi vlasnici ne poznaju dosadu. Unatoč svojoj živahnoj prirodi, vrlo je inteligentan i zahtijeva mnogo ljubavi i privrženosti. Saznajte sve o mopsu, njegovom karakteru i njezi njegove kratke dlake. ",
+      "pregled": "2023-05-01",
       "udomljen": "true",
       "image": "pas2.jpg"
     },
     {
       "id": 3,
-      "ime": "Miljenko",
-      "vrsta": "mačka",
-      "cip": false,
-      "godine": 21,
-      "opis": "Više od obične mačke",
-      "pregled": "2010-05-11",
-      "udomljen": "true",
-      "image": "macka2.jpg"
-    },
-    {
-      "id": 4,
-      "ime": "Velja",
+      "ime": "Ares",
       "vrsta": "pas",
       "cip": true,
-      "godine": 50,
-      "opis": "Više od običnog psa",
-      "pregled": "2000-02-13",
-      "udomljen": "true",
-      "image": "pas1.jpg"
-    },
-    {
-      "id": 5,
-      "ime": "Mile",
-      "vrsta": "pas",
-      "cip": true,
-      "godine": 50,
-      "opis": "Više od običnog psa",
-      "pregled": "2000-02-13",
-      "udomljen": "true",
+      "godine": "1",
+      "opis": "Elegantan i snažan njemački gonič jedna je od najstarijih pasmina pasa na svijetu. Kao zahtjevni čistokrvni lovci, njemački goniči su predodređeni da prate tragove životinja.",
+      "pregled": "2023-05-06",
+      "udomljen": "false",
       "image": "pas3.jpg"
     },
     {
-      "id": 6,
-      "ime": "Ante",
-      "vrsta": "pas",
+      "id": 4,
+      "ime": "Miki",
+      "vrsta": "mačka",
       "cip": true,
-      "godine": "21",
-      "opis": "Mudonja",
-      "pregled": "2023-05-11",
-      "udomljen": "true",
-      "image": "pas1.jpg"
+      "godine": "1",
+      "opis": "Prekrasna macka duge dlake. Prikladna za stan!",
+      "pregled": "2023-04-30",
+      "udomljen": "false",
+      "image": "macka1.jpg"
+    },
+    {
+      "id": 5,
+      "ime": "Petar",
+      "vrsta": "mačka",
+      "cip": false,
+      "godine": "9",
+      "opis": "gsdsgdgsdgdssdg",
+      "pregled": "2023-05-02",
+      "udomljen": "false",
+      "image": "macka2.jpg"
+    },
+    {
+      "id": 6,
+      "ime": "Miljenko",
+      "vrsta": "mačka",
+      "cip": true,
+      "godine": "1",
+      "opis": "fsaasfasffasfas",
+      "pregled": "2023-05-02",
+      "udomljen": "false",
+      "image": "macka3.jpg"
     },
     {
       "id": 7,
-      "ime": "Mirko",
+      "ime": "Zdravko",
       "vrsta": "mačka",
-      "cip": false,
+      "cip": true,
       "godine": "1",
-      "opis": "Kratkodlaka macka",
-      "pregled": "2023-02-01",
+      "opis": "Ova macka je zakon! Cipirana i spremna za udomljavanje!",
+      "pregled": "2023-04-30",
       "udomljen": "true",
-      "image": "macka2.jpg"
+      "image": "macka4.jpg"
     },
     {
       "id": 8,
-      "ime": "Ante",
-      "vrsta": "mačka",
-      "cip": true,
+      "ime": "Twinki",
+      "vrsta": "ostalo",
+      "cip": false,
       "godine": "2",
-      "opis": "",
-      "pregled": "2023-05-31",
-      "udomljen": "true",
-      "image": "pas1.jpg"
-    },
-    {
-      "id": 9,
-      "ime": "Karako",
-      "vrsta": "mačka",
-      "cip": true,
-      "godine": "21",
-      "opis": "ghgffvvg",
-      "pregled": "2023-05-24",
-      "udomljen": "true",
-      "image": "macka2.jpg"
+      "opis": "Glas kao Doris Dragovic",
+      "pregled": "2023-05-01",
+      "udomljen": "false",
+      "image": "ptica.jpg"
     }
   ],
   "donacije": [
@@ -105,27 +94,6 @@
       "id": 3,
       "kategorija": "donirano",
       "tip": "Novac",
-      "vrijednost": 15,
-      "opis": "Hrana za ptice"
-    },
-    {
-      "id": 4,
-      "kategorija": "donirano",
-      "tip": "Ostalo",
-      "vrijednost": 15,
-      "opis": "Hrana za ptice"
-    },
-    {
-      "id": 5,
-      "kategorija": "donirano",
-      "tip": "Hrana",
-      "vrijednost": 15,
-      "opis": "Hrana za ptice"
-    },
-    {
-      "id": 6,
-      "kategorija": "donirano",
-      "tip": "Ostalo",
       "vrijednost": 15,
       "opis": "Hrana za ptice"
     },
@@ -163,6 +131,13 @@
       "tip": "Novac",
       "vrijednost": "11",
       "opis": "TESTESTESTTESTESTESTTESTESTESTTESTESTEST"
+    },
+    {
+      "id": 13,
+      "kategorija": "nudi",
+      "tip": "Igračke",
+      "vrijednost": "25",
+      "opis": "Nudim igračke za pse!"
     }
   ],
   "obavijesti": [

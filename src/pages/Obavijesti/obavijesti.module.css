@@ -4,7 +4,6 @@
     --padding: 1rem;
     margin-inline: auto; /* da postavi left and right -> Logical Property */
     width: min(var(--max-width), 100% - (2*var(--padding)));
-    
 }
 
 .button{
