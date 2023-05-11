@@ -1,5 +1,5 @@
 # JuniorDEVProjekt
-<b>Test</b>
+<b>Završni projekt za EditJuniorDev edukaciju - <a href="https://digitalnadalmacija.hr/">Digitalna Dalmacija</a></b>
 
 
  TODO LIST
