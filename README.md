@@ -2,7 +2,7 @@
 <b>Završni projekt za Edit JuniorDev edukaciju koju organizira <a href="https://digitalnadalmacija.hr/">Digitalna Dalmacija</a></b>
 
 Cilj projekta je napraviti <b>REACT</b> aplikaciju koja će predstavljati stranicu azila za životinje. Aplikacija će se sastojati od nekoliko pod-stranica.
-Stranica je u potpunosti responzivna iako bi trebalo napraviti nekoliko promjena.
+Stranica je u potpunosti <b>responzivna</b> iako bi trebalo napraviti nekoliko promjena.
 
 <ul>
  <li>Opći podaci</li>
